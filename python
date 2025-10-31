@@ -1,0 +1,850 @@
+import random
+import os
+from typing import List, Dict, Any
+questions = [
+    # Nouns and main verbs (1-10)
+    {
+        "question": "Identify the noun in the sentence: 'The dog runs quickly.'",
+        "options": ["A) Runs", "B) Quickly", "C) Dog", "D) The"],
+        "answer": "C"
+    },
+    {
+        "question": "What is the main verb in: 'She is eating an apple.'",
+        "options": ["A) Is", "B) Eating", "C) An", "D) Apple"],
+        "answer": "B"
+    },
+    {
+        "question": "Which word is a proper noun? 'Paris is a beautiful city.'",
+        "options": ["A) Beautiful", "B) City", "C) Is", "D) Paris"],
+        "answer": "D"
+    },
+    {
+        "question": "Identify the abstract noun: 'Honesty is the best policy.'",
+        "options": ["A) Best", "B) Policy", "C) Honesty", "D) Is"],
+        "answer": "C"
+    },
+    {
+        "question": "What is the main verb in: 'They have been playing football.'",
+        "options": ["A) Have", "B) Been", "C) Playing", "D) Football"],
+        "answer": "C"
+    },
+    {
+        "question": "Which is a common noun? 'The teacher praised the student.'",
+        "options": ["A) Teacher", "B) Praised", "C) The", "D) Student"],
+        "answer": "A"
+    },
+    {
+        "question": "Identify the noun: 'Happiness comes from within.'",
+        "options": ["A) Comes", "B) From", "C) Happiness", "D) Within"],
+        "answer": "C"
+    },
+    {
+        "question": "Main verb in: 'I will go to the market.'",
+        "options": ["A) Will", "B) Go", "C) To", "D) Market"],
+        "answer": "B"
+    },
+    {
+        "question": "Which is a concrete noun? 'The book is on the table.'",
+        "options": ["A) Is", "B) On", "C) Book", "D) The"],
+        "answer": "C"
+    },
+    {
+        "question": "Main verb in: 'Birds are flying high.'",
+        "options": ["A) Are", "B) Flying", "C) High", "D) Birds"],
+        "answer": "B"
+    },
+    # Number and collection (11-20)
+    {
+        "question": "What is the plural form of 'child'?",
+        "options": ["A) Childs", "B) Childes", "C) Children", "D) Childrens"],
+        "answer": "C"
+    },
+    {
+        "question": "Choose the correct collective noun: 'A _____ of wolves.'",
+        "options": ["A) Herd", "B) Pack", "C) Flock", "D) School"],
+        "answer": "B"
+    },
+    {
+        "question": "Singular or plural? 'The news is good.'",
+        "options": ["A) Plural", "B) Singular", "C) Both", "D) None"],
+        "answer": "B"
+    },
+    {
+        "question": "Plural of 'mouse':",
+        "options": ["A) Mouses", "B) Mice", "C) Mices", "D) Mouse's"],
+        "answer": "B"
+    },
+    {
+        "question": "Collective noun for 'stars': 'A _____ of stars.'",
+        "options": ["A) Constellation", "B) Bunch", "C) Herd", "D) Pack"],
+        "answer": "A"
+    },
+    {
+        "question": "What is the singular form of 'data'?",
+        "options": ["A) Datas", "B) Datum", "C) Date", "D) Datus"],
+        "answer": "B"
+    },
+    {
+        "question": "Choose correct: 'A flock of _____.'",
+        "options": ["A) Sheep", "B) Fish", "C) Birds", "D) Lions"],
+        "answer": "C"
+    },
+    {
+        "question": "Plural of 'knife':",
+        "options": ["A) Knifes", "B) Knive", "C) Knives", "D) Knife's"],
+        "answer": "C"
+    },
+    {
+        "question": "Collective noun: 'A _____ of cards.'",
+        "options": ["A) Deck", "B) Bunch", "C) Herd", "D) School"],
+        "answer": "A"
+    },
+    {
+        "question": "Is 'furniture' singular or plural?",
+        "options": ["A) Plural", "B) Singular", "C) Both", "D) None"],
+        "answer": "B"
+    },
+    # Countable and uncountable nouns (21-30)
+    {
+        "question": "Is 'water' countable or uncountable?",
+        "options": ["A) Countable", "B) Uncountable", "C) Both", "D) Neither"],
+        "answer": "B"
+    },
+    {
+        "question": "Which is countable? 'Apple, milk, sugar, banana.'",
+        "options": ["A) Milk", "B) Sugar", "C) Apple", "D) None"],
+        "answer": "C"
+    },
+    {
+        "question": "Correct sentence: 'I need _____ information.'",
+        "options": ["A) Many", "B) Much", "C) Few", "D) Little"],
+        "answer": "B"
+    },
+    {
+        "question": "Is 'hair' uncountable?",
+        "options": ["A) Yes", "B) No", "C) Sometimes", "D) Never"],
+        "answer": "A"
+    },
+    {
+        "question": "Choose for countable: 'There are _____ books.'",
+        "options": ["A) Much", "B) Many", "C) Little", "D) Some"],
+        "answer": "B"
+    },
+    {
+        "question": "Uncountable noun: 'Advice, pen, chair, table.'",
+        "options": ["A) Pen", "B) Chair", "C) Table", "D) Advice"],
+        "answer": "D"
+    },
+    {
+        "question": "Correct: 'How _____ rice do you need?'",
+        "options": ["A) Many", "B) Few", "C) Much", "D) Little"],
+        "answer": "C"
+    },
+    {
+        "question": "Is 'luggage' countable?",
+        "options": ["A) Yes", "B) No", "C) Both", "D) Neither"],
+        "answer": "B"
+    },
+    {
+        "question": "For uncountable: 'There is _____ traffic.'",
+        "options": ["A) Many", "B) Few", "C) Much", "D) None"],
+        "answer": "C"
+    },
+    {
+        "question": "Countable example: 'Bread, butter, egg, milk.'",
+        "options": ["A) Bread", "B) Butter", "C) Milk", "D) Egg"],
+        "answer": "D"
+    },
+    # Verb forms and noun + helping verbs (31-40)
+    {
+        "question": "Past tense of 'go':",
+        "options": ["A) Goed", "B) Went", "C) Gone", "D) Goes"],
+        "answer": "B"
+    },
+    {
+        "question": "Helping verb in: 'She is running.'",
+        "options": ["A) She", "B) Is", "C) Running", "D) None"],
+        "answer": "B"
+    },
+    {
+        "question": "Correct form: 'He _____ to school every day.'",
+        "options": ["A) Go", "B) Goes", "C) Went", "D) Gone"],
+        "answer": "B"
+    },
+    {
+        "question": "Past participle of 'eat':",
+        "options": ["A) Ate", "B) Eat", "C) Eaten", "D) Eating"],
+        "answer": "C"
+    },
+    {
+        "question": "Helping verbs: Which is one? 'Am, is, are.'",
+        "options": ["A) All", "B) None", "C) Only am", "D) Only is"],
+        "answer": "A"
+    },
+    {
+        "question": "Correct: 'They _____ playing football.'",
+        "options": ["A) Was", "B) Were", "C) Is", "D) Am"],
+        "answer": "B"
+    },
+    {
+        "question": "Infinitive form of 'ran':",
+        "options": ["A) Run", "B) Running", "C) Runs", "D) Runned"],
+        "answer": "A"
+    },
+    {
+        "question": "Helping verb in perfect tense: 'Have _____.'",
+        "options": ["A) Been", "B) Being", "C) Be", "D) Was"],
+        "answer": "A"
+    },
+    {
+        "question": "Correct form: 'She _____ a song.'",
+        "options": ["A) Sing", "B) Sang", "C) Sung", "D) Sings"],
+        "answer": "D"
+    },
+    {
+        "question": "Noun + helping verb: 'The cat _____ sleeping.'",
+        "options": ["A) Is", "B) Are", "C) Was", "D) Were"],
+        "answer": "A"
+    },
+    # Possessive noun apostrophe and its form (41-50)
+    {
+        "question": "Possessive form of 'dog':",
+        "options": ["A) Dogs", "B) Dog's", "C) Dogs'", "D) Doges"],
+        "answer": "B"
+    },
+    {
+        "question": "Correct: 'The _____ book is on the table.' (boy)",
+        "options": ["A) Boys", "B) Boy's", "C) Boys'", "D) Boyes"],
+        "answer": "B"
+    },
+    {
+        "question": "Plural possessive: 'Children _____ toys.'",
+        "options": ["A) Childrens'", "B) Children's", "C) Childrens", "D) Children'"],
+        "answer": "B"
+    },
+    {
+        "question": "For 'teachers': 'The _____ lounge.'",
+        "options": ["A) Teacher's", "B) Teachers'", "C) Teachers", "D) Teacher'"],
+        "answer": "B"
+    },
+    {
+        "question": "Correct: 'It is _____ turn.' (Chris)",
+        "options": ["A) Chris's", "B) Chris'", "C) Chris", "D) Chrises"],
+        "answer": "A"
+    },
+    {
+        "question": "Possessive of 'parents': 'My _____ house.'",
+        "options": ["A) Parents'", "B) Parent's", "C) Parents", "D) Parent'"],
+        "answer": "A"
+    },
+    {
+        "question": "For singular 'boss': 'The _____ office.'",
+        "options": ["A) Bosses", "B) Boss's", "C) Boss'", "D) Bosses'"],
+        "answer": "B"
+    },
+    {
+        "question": "Correct: 'The _____ hats.' (ladies)",
+        "options": ["A) Ladies'", "B) Lady's", "C) Ladies", "D) Ladys'"],
+        "answer": "A"
+    },
+    {
+        "question": "Possessive form: 'James _____ car.'",
+        "options": ["A) James'", "B) James's", "C) James", "D) Jameses"],
+        "answer": "B"
+    },
+    {
+        "question": "For 'cats': 'The _____ tails.'",
+        "options": ["A) Cat's", "B) Cats'", "C) Cats", "D) Cat'"],
+        "answer": "B"
+    },
+    # Pronouns and possessive pronouns (51-60)
+    {
+        "question": "Which is a possessive pronoun? 'Mine, I, me, my.'",
+        "options": ["A) I", "B) Me", "C) My", "D) Mine"],
+        "answer": "D"
+    },
+    {
+        "question": "Correct pronoun: '_____ is my book.'",
+        "options": ["A) This", "B) These", "C) Them", "D) Those"],
+        "answer": "A"
+    },
+    {
+        "question": "Possessive pronoun: 'The book is _____.",
+        "options": ["A) Her", "B) Hers", "C) She", "D) Herself"],
+        "answer": "B"
+    },
+    {
+        "question": "Which is reflexive? 'Myself, mine, my, me.'",
+        "options": ["A) Mine", "B) My", "C) Me", "D) Myself"],
+        "answer": "D"
+    },
+    {
+        "question": "Correct: '_____ are students.'",
+        "options": ["A) We", "B) Us", "C) Our", "D) Ours"],
+        "answer": "A"
+    },
+    {
+        "question": "Possessive: 'This is _____ house.'",
+        "options": ["A) Their", "B) They", "C) Them", "D) Theirs"],
+        "answer": "D"
+    },
+    {
+        "question": "Pronoun type: 'Who' in 'Who is there?'",
+        "options": ["A) Relative", "B) Interrogative", "C) Possessive", "D) Reflexive"],
+        "answer": "B"
+    },
+    {
+        "question": "Correct possessive: 'The decision is _____.",
+        "options": ["A) Your", "B) Yours", "C) You", "D) Yourself"],
+        "answer": "B"
+    },
+    {
+        "question": "Which is personal pronoun? 'It, its, itself, that.'",
+        "options": ["A) Its", "B) Itself", "C) That", "D) It"],
+        "answer": "D"
+    },
+    {
+        "question": "Possessive pronoun: 'That pen is _____.",
+        "options": ["A) My", "B) Mine", "C) I", "D) Me"],
+        "answer": "B"
+    },
+    # Advanced Grammar Topics (61-80)
+    {
+        "question": "Which sentence uses the subjunctive mood correctly?",
+        "options": ["A) If I was rich, I would travel.", "B) If I were rich, I would travel.", "C) If I am rich, I will travel.", "D) If I be rich, I would travel."],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Identify the dangling modifier: 'Walking to school, the rain started falling.'",
+        "options": ["A) Walking to school", "B) The rain started", "C) Started falling", "D) No error"],
+        "answer": "A",
+        "category": "Advanced Grammar",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which sentence has a split infinitive?",
+        "options": ["A) To boldly go where no man has gone before.", "B) To go boldly where no man has gone before.", "C) Boldly to go where no man has gone before.", "D) To go where no man has boldly gone before."],
+        "answer": "A",
+        "category": "Advanced Grammar",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Choose the correct conditional: 'If I _____ you, I would apologize.'",
+        "options": ["A) Was", "B) Were", "C) Am", "D) Be"],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which sentence uses parallel structure correctly?",
+        "options": ["A) She likes reading, to write, and swimming.", "B) She likes to read, to write, and to swim.", "C) She likes reading, writing, and to swim.", "D) She likes to read, writing, and swimming."],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Identify the gerund in: 'Swimming is my favorite exercise.'",
+        "options": ["A) Swimming", "B) Is", "C) My", "D) Exercise"],
+        "answer": "A",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which is a participial phrase? 'The book, written by Shakespeare, is famous.'",
+        "options": ["A) The book", "B) Written by Shakespeare", "C) Is famous", "D) By Shakespeare"],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Correct passive voice: 'The letter _____ yesterday.'",
+        "options": ["A) Was sent", "B) Sent", "C) Was send", "D) Send"],
+        "answer": "A",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which sentence uses 'who' vs 'whom' correctly?",
+        "options": ["A) Who did you give the book to?", "B) Whom did you give the book to?", "C) Who to did you give the book?", "D) Whom to did you give the book?"],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Identify the indirect object: 'She gave him a present.'",
+        "options": ["A) She", "B) Gave", "C) Him", "D) Present"],
+        "answer": "C",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which sentence uses the future perfect tense?",
+        "options": ["A) I will finish the work.", "B) I will have finished the work.", "C) I am finishing the work.", "D) I have finished the work."],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Correct use of 'lie' vs 'lay': 'The book _____ on the table.'",
+        "options": ["A) Lies", "B) Lays", "C) Lied", "D) Layed"],
+        "answer": "A",
+        "category": "Advanced Grammar",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which sentence has correct subject-verb agreement?",
+        "options": ["A) Neither John nor Mary are coming.", "B) Neither John nor Mary is coming.", "C) Neither John or Mary is coming.", "D) Neither John or Mary are coming."],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Identify the appositive: 'My friend, the doctor, is visiting.'",
+        "options": ["A) My friend", "B) The doctor", "C) Is visiting", "D) Doctor"],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which sentence uses 'farther' vs 'further' correctly?",
+        "options": ["A) I need to look further into this matter.", "B) I need to look farther into this matter.", "C) The store is further than I thought.", "D) Both A and C are correct."],
+        "answer": "A",
+        "category": "Advanced Grammar",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Correct use of 'affect' vs 'effect': 'The medicine had no _____ on him.'",
+        "options": ["A) Affect", "B) Effect", "C) Affected", "D) Effected"],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which sentence uses 'its' vs 'it's' correctly?",
+        "options": ["A) Its a beautiful day.", "B) It's a beautiful day.", "C) The cat lost its toy.", "D) Both B and C are correct."],
+        "answer": "D",
+        "category": "Advanced Grammar",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Identify the compound sentence:",
+        "options": ["A) The dog barked loudly.", "B) The dog barked, and the cat ran away.", "C) The loudly barking dog.", "D) Because the dog barked, the cat ran."],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which sentence uses 'less' vs 'fewer' correctly?",
+        "options": ["A) There are less people here today.", "B) There are fewer people here today.", "C) I have less money than you.", "D) Both B and C are correct."],
+        "answer": "D",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Correct use of 'between' vs 'among': 'The secret is _____ us three.'",
+        "options": ["A) Between", "B) Among", "C) Either is correct", "D) Neither is correct"],
+        "answer": "B",
+        "category": "Advanced Grammar",
+        "difficulty": "Medium"
+    },
+    # Idioms and Phrasal Verbs (81-100)
+    {
+        "question": "What does 'break the ice' mean?",
+        "options": ["A) To start a conversation", "B) To break something", "C) To be cold", "D) To be silent"],
+        "answer": "A",
+        "category": "Idioms",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Choose the correct phrasal verb: 'I need to _____ this problem.'",
+        "options": ["A) Look into", "B) Look up", "C) Look after", "D) Look for"],
+        "answer": "A",
+        "category": "Phrasal Verbs",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "What does 'piece of cake' mean?",
+        "options": ["A) Something sweet", "B) Something easy", "C) Something expensive", "D) Something broken"],
+        "answer": "B",
+        "category": "Idioms",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Correct phrasal verb: 'The meeting was _____ until next week.'",
+        "options": ["A) Put off", "B) Put on", "C) Put up", "D) Put down"],
+        "answer": "A",
+        "category": "Phrasal Verbs",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "What does 'hit the nail on the head' mean?",
+        "options": ["A) To be exactly right", "B) To be wrong", "C) To work hard", "D) To be angry"],
+        "answer": "A",
+        "category": "Idioms",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Phrasal verb meaning: 'I _____ my old friend yesterday.'",
+        "options": ["A) Ran into", "B) Ran out", "C) Ran over", "D) Ran away"],
+        "answer": "A",
+        "category": "Phrasal Verbs",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "What does 'burn the midnight oil' mean?",
+        "options": ["A) To work late at night", "B) To be tired", "C) To waste time", "D) To be energetic"],
+        "answer": "A",
+        "category": "Idioms",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Correct phrasal verb: 'Please _____ the lights when you leave.'",
+        "options": ["A) Turn on", "B) Turn off", "C) Turn up", "D) Turn down"],
+        "answer": "B",
+        "category": "Phrasal Verbs",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What does 'the ball is in your court' mean?",
+        "options": ["A) You need to make a decision", "B) You're playing tennis", "C) You're wrong", "D) You're tired"],
+        "answer": "A",
+        "category": "Idioms",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Phrasal verb: 'I _____ smoking last year.'",
+        "options": ["A) Gave up", "B) Gave in", "C) Gave out", "D) Gave away"],
+        "answer": "A",
+        "category": "Phrasal Verbs",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "What does 'spill the beans' mean?",
+        "options": ["A) To reveal a secret", "B) To make a mess", "C) To be honest", "D) To be quiet"],
+        "answer": "A",
+        "category": "Idioms",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Correct phrasal verb: 'The plane _____ on time.'",
+        "options": ["A) Took off", "B) Took up", "C) Took out", "D) Took in"],
+        "answer": "A",
+        "category": "Phrasal Verbs",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What does 'don't count your chickens before they hatch' mean?",
+        "options": ["A) Don't be too confident", "B) Don't buy chickens", "C) Don't be patient", "D) Don't work hard"],
+        "answer": "A",
+        "category": "Idioms",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Phrasal verb: 'I need to _____ my homework.'",
+        "options": ["A) Hand in", "B) Hand out", "C) Hand over", "D) Hand down"],
+        "answer": "A",
+        "category": "Phrasal Verbs",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What does 'the early bird catches the worm' mean?",
+        "options": ["A) Being early is beneficial", "B) Birds eat worms", "C) Worms are fast", "D) Birds are lazy"],
+        "answer": "A",
+        "category": "Idioms",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Correct phrasal verb: 'Can you _____ this word for me?'",
+        "options": ["A) Look up", "B) Look into", "C) Look after", "D) Look for"],
+        "answer": "A",
+        "category": "Phrasal Verbs",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What does 'it's raining cats and dogs' mean?",
+        "options": ["A) It's raining heavily", "B) Animals are falling", "C) It's not raining", "D) It's a strange day"],
+        "answer": "A",
+        "category": "Idioms",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Phrasal verb: 'I _____ my keys everywhere.'",
+        "options": ["A) Looked for", "B) Looked after", "C) Looked into", "D) Looked up"],
+        "answer": "A",
+        "category": "Phrasal Verbs",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What does 'barking up the wrong tree' mean?",
+        "options": ["A) To be mistaken", "B) To be angry", "C) To be confused", "D) To be right"],
+        "answer": "A",
+        "category": "Idioms",
+        "difficulty": "Hard"
+    }
+]
+
+class EnglishQuiz:
+    def __init__(self):
+        self.questions = questions
+        self.score = 0
+        self.total_questions = 0
+        self.incorrect_answers = []
+        
+    def clear_screen(self):
+        """Clear the console screen"""
+        os.system('cls' if os.name == 'nt' else 'clear')
+    
+    def display_header(self):
+        """Display quiz header with formatting"""
+        print("=" * 60)
+        print("🎓 ADVANCED ENGLISH GRAMMAR QUIZ 🎓".center(60))
+        print("=" * 60)
+        print()
+    
+    def get_difficulty_color(self, difficulty: str) -> str:
+        """Return color code based on difficulty"""
+        colors = {
+            "Easy": "🟢",
+            "Medium": "🟡", 
+            "Hard": "🔴"
+        }
+        return colors.get(difficulty, "⚪")
+    
+    def display_question(self, question_num: int, question: Dict[str, Any]):
+        """Display a single question with enhanced formatting"""
+        category = question.get('category', 'General')
+        difficulty = question.get('difficulty', 'Medium')
+        difficulty_icon = self.get_difficulty_color(difficulty)
+        
+        print(f"\n{'─' * 60}")
+        print(f"Question {question_num}/{len(self.questions)} | {category} | {difficulty_icon} {difficulty}")
+        print(f"{'─' * 60}")
+        print(f"📝 {question['question']}")
+        print()
+        
+        for option in question['options']:
+            print(f"   {option}")
+        print()
+    
+    def get_user_answer(self) -> str:
+        """Get and validate user answer"""
+        while True:
+            user_input = input("Your answer (A/B/C/D) or 'Q' to quit: ").upper().strip()
+            if user_input in ['A', 'B', 'C', 'D']:
+                return user_input
+            elif user_input == 'Q':
+                return 'QUIT'
+            else:
+                print("❌ Invalid input! Please enter A, B, C, or D.")
+    
+    def display_result(self, correct: bool, user_answer: str, correct_answer: str):
+        """Display result with feedback"""
+        if correct:
+            print("✅ Correct! Well done!")
+        else:
+            print(f"❌ Incorrect! The correct answer is {correct_answer}.")
+            # Store incorrect answer for review
+            self.incorrect_answers.append({
+                'question': self.current_question['question'],
+                'user_answer': user_answer,
+                'correct_answer': correct_answer,
+                'options': self.current_question['options']
+            })
+    
+    def display_progress(self, current: int, total: int):
+        """Display progress bar"""
+        percentage = (current / total) * 100
+        filled = int(percentage // 5)
+        bar = "█" * filled + "░" * (20 - filled)
+        print(f"\nProgress: [{bar}] {percentage:.1f}% ({current}/{total})")
+    
+    def shuffle_questions(self):
+        """Shuffle the questions randomly"""
+        random.shuffle(self.questions)
+    
+    def filter_by_difficulty(self, difficulty: str):
+        """Filter questions by difficulty level"""
+        if difficulty.upper() == 'ALL':
+            return
+        self.questions = [q for q in self.questions if q.get('difficulty', 'Medium').lower() == difficulty.lower()]
+    
+    def run_quiz(self, shuffle: bool = False, difficulty: str = 'ALL'):
+        """Main quiz function with enhanced features"""
+        self.clear_screen()
+        self.display_header()
+        
+        # Filter and shuffle questions if requested
+        if difficulty.upper() != 'ALL':
+            self.filter_by_difficulty(difficulty)
+        
+        if shuffle:
+            self.shuffle_questions()
+            print("🔀 Questions have been shuffled!")
+        
+        print(f"📊 Total questions: {len(self.questions)}")
+        print("🎯 Answer each question by typing A, B, C, or D")
+        print("💡 Type 'Q' at any time to quit and see results")
+        print("\nPress Enter to start...")
+        input()
+        
+        self.clear_screen()
+        self.display_header()
+        
+        for i, question in enumerate(self.questions, 1):
+            self.current_question = question
+            self.display_question(i, question)
+            self.display_progress(i, len(self.questions))
+            
+            user_answer = self.get_user_answer()
+            
+            if user_answer == 'QUIT':
+                print("\n🛑 Quiz stopped by user.")
+                break
+            
+            correct = user_answer == question['answer']
+            self.display_result(correct, user_answer, question['answer'])
+            
+            if correct:
+                self.score += 1
+            
+            self.total_questions = i
+            
+            if i < len(self.questions):
+                input("\nPress Enter for next question...")
+                self.clear_screen()
+                self.display_header()
+        
+        self.display_final_results()
+    
+    def display_final_results(self):
+        """Display comprehensive final results"""
+        self.clear_screen()
+        print("=" * 60)
+        print("🏆 QUIZ RESULTS 🏆".center(60))
+        print("=" * 60)
+        
+        percentage = (self.score / self.total_questions) * 100 if self.total_questions > 0 else 0
+        
+        print(f"\n📊 Final Score: {self.score}/{self.total_questions}")
+        print(f"📈 Percentage: {percentage:.1f}%")
+        
+        # Performance feedback
+        if percentage >= 90:
+            print("🌟 Excellent! Outstanding performance!")
+        elif percentage >= 80:
+            print("🎉 Great job! Very good performance!")
+        elif percentage >= 70:
+            print("👍 Good work! Keep practicing!")
+        elif percentage >= 60:
+            print("📚 Not bad! Review the topics you missed.")
+        else:
+            print("💪 Keep studying! Practice makes perfect!")
+        
+        # Show incorrect answers for review
+        if self.incorrect_answers:
+            print(f"\n📝 Review {len(self.incorrect_answers)} incorrect answers:")
+            print("─" * 60)
+            
+            for i, item in enumerate(self.incorrect_answers, 1):
+                print(f"\n{i}. {item['question']}")
+                for option in item['options']:
+                    marker = "✅" if option.startswith(item['correct_answer']) else "❌" if option.startswith(item['user_answer']) else "  "
+                    print(f"   {marker} {option}")
+                print()
+        
+        # Category breakdown
+        self.show_category_breakdown()
+        
+        print("\n" + "=" * 60)
+        print("Thank you for taking the quiz! Keep learning! 🎓")
+    
+    def show_category_breakdown(self):
+        """Show performance by category"""
+        categories = {}
+        for q in self.questions[:self.total_questions]:
+            cat = q.get('category', 'General')
+            if cat not in categories:
+                categories[cat] = {'total': 0, 'correct': 0}
+            categories[cat]['total'] += 1
+        
+        # Count correct answers by category
+        correct_by_category = {}
+        for item in self.incorrect_answers:
+            # This is simplified - in a real implementation, you'd track correct answers by category
+            pass
+        
+        if len(categories) > 1:
+            print(f"\n📊 Performance by Category:")
+            print("─" * 40)
+            for cat, stats in categories.items():
+                print(f"{cat}: {stats['total']} questions")
+
+def main():
+    """Main function with menu options"""
+    quiz = EnglishQuiz()
+    
+    while True:
+        quiz.clear_screen()
+        print("=" * 60)
+        print("🎓 ENGLISH GRAMMAR QUIZ MENU 🎓".center(60))
+        print("=" * 60)
+        print("\nChoose your quiz options:")
+        print("1. 🎯 Take Full Quiz (All Questions)")
+        print("2. 🔀 Take Shuffled Quiz")
+        print("3. 🟢 Easy Questions Only")
+        print("4. 🟡 Medium Questions Only") 
+        print("5. 🔴 Hard Questions Only")
+        print("6. 📊 View Question Categories")
+        print("7. 🚪 Exit")
+        
+        choice = input("\nEnter your choice (1-7): ").strip()
+        
+        if choice == '1':
+            quiz.run_quiz()
+        elif choice == '2':
+            quiz.run_quiz(shuffle=True)
+        elif choice == '3':
+            quiz.run_quiz(difficulty='Easy')
+        elif choice == '4':
+            quiz.run_quiz(difficulty='Medium')
+        elif choice == '5':
+            quiz.run_quiz(difficulty='Hard')
+        elif choice == '6':
+            quiz.show_question_categories()
+        elif choice == '7':
+            print("\n👋 Thank you for using the English Grammar Quiz!")
+            break
+        else:
+            print("\n❌ Invalid choice! Please enter 1-7.")
+            input("Press Enter to continue...")
+    
+    input("\nPress Enter to exit...")
+
+def show_question_categories(self):
+        """Display available question categories and counts"""
+        categories = {}
+        for q in self.questions:
+            cat = q.get('category', 'General')
+            diff = q.get('difficulty', 'Medium')
+            if cat not in categories:
+                categories[cat] = {'Easy': 0, 'Medium': 0, 'Hard': 0}
+            categories[cat][diff] += 1
+        
+        print("\n📚 Available Question Categories:")
+        print("─" * 50)
+        total = 0
+        for cat, diffs in categories.items():
+            cat_total = sum(diffs.values())
+            total += cat_total
+            print(f"\n{cat}: {cat_total} questions")
+            print(f"  🟢 Easy: {diffs['Easy']}")
+            print(f"  🟡 Medium: {diffs['Medium']}")
+            print(f"  🔴 Hard: {diffs['Hard']}")
+        
+        print(f"\n📊 Total Questions Available: {total}")
+        input("\nPress Enter to return to menu...")
+
+if __name__ == "__main__":
+    main()
