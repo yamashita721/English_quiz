@@ -10,6 +10,7 @@ A comprehensive English grammar quiz application covering various topics includi
 - Tenses
 - Possession
 - And more!
+---->>Every week questions will be updated with more new intresting questions!
 
 ## How to Run
 
