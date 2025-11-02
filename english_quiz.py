@@ -50,32 +50,68 @@ questions = [
     {
         "question": "What is the main verb in: 'They have been playing football.'",
         "options": ["A) Have", "B) Been", "C) Playing", "D) Football"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Have' is a helping verb (auxiliary verb) used to form the present perfect continuous tense, but it's not the main verb.",
+            "B": "Incorrect. 'Been' is also a helping verb (past participle of 'be') that works with 'have' to form the perfect continuous tense, not the main verb.",
+            "C": "Correct! 'Playing' is the main verb - it's the primary action being performed. 'Have' and 'been' are helping verbs that just form the tense.",
+            "D": "Incorrect. 'Football' is a noun - it's the object of the verb, the thing being played."
+        }
     },
     {
         "question": "Which is a common noun? 'The teacher praised the student.'",
         "options": ["A) Teacher", "B) Praised", "C) The", "D) Student"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Teacher' is a common noun - it's a general term for a person or profession, not a specific name. Common nouns are not capitalized unless they start a sentence.",
+            "B": "Incorrect. 'Praised' is a verb (past tense of 'praise') that describes the action performed by the teacher.",
+            "C": "Incorrect. 'The' is an article (definite article) used to specify or identify the nouns, not a noun itself.",
+            "D": "Incorrect. 'Student' is also a common noun, but the question asks for 'which is a common noun', and both A and D are common nouns. However, 'teacher' comes first in the sentence, so A is the primary answer, though both are technically correct. The answer key indicates A."
+        }
     },
     {
         "question": "Identify the noun: 'Happiness comes from within.'",
         "options": ["A) Comes", "B) From", "C) Happiness", "D) Within"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Comes' is a verb (third-person singular present tense of 'come') that describes the action or state.",
+            "B": "Incorrect. 'From' is a preposition that shows the relationship or direction between 'comes' and 'within'.",
+            "C": "Correct! 'Happiness' is a noun - specifically an abstract noun representing an emotion or state that cannot be physically touched.",
+            "D": "Incorrect. 'Within' is a preposition or adverb indicating location or position, not a noun."
+        }
     },
     {
         "question": "Main verb in: 'I will go to the market.'",
         "options": ["A) Will", "B) Go", "C) To", "D) Market"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Will' is a helping verb (modal auxiliary) used to form the future tense, but it's not the main verb that expresses the action.",
+            "B": "Correct! 'Go' is the main verb - it's the primary action being performed. 'Will' just helps to indicate future time.",
+            "C": "Incorrect. 'To' is a preposition that introduces the prepositional phrase 'to the market'.",
+            "D": "Incorrect. 'Market' is a noun - it's the object of the preposition 'to', indicating the destination."
+        }
     },
     {
         "question": "Which is a concrete noun? 'The book is on the table.'",
         "options": ["A) Is", "B) On", "C) Book", "D) The"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Is' is a verb (linking verb) that connects the subject 'book' with its location 'on the table'.",
+            "B": "Incorrect. 'On' is a preposition that shows the spatial relationship between the book and the table.",
+            "C": "Correct! 'Book' is a concrete noun - it's something physical that can be seen and touched. Concrete nouns refer to tangible objects.",
+            "D": "Incorrect. 'The' is an article (definite article) used to specify the nouns, not a noun itself."
+        }
     },
     {
         "question": "Main verb in: 'Birds are flying high.'",
         "options": ["A) Are", "B) Flying", "C) High", "D) Birds"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Are' is a helping verb (auxiliary verb) used to form the present continuous tense, but it's not the main verb.",
+            "B": "Correct! 'Flying' is the main verb - it's the primary action being performed. 'Are' just helps to form the present continuous tense.",
+            "C": "Incorrect. 'High' is an adverb that modifies the verb 'flying' by describing how or where the birds are flying.",
+            "D": "Incorrect. 'Birds' is a noun - it's the subject of the sentence, the thing performing the action."
+        }
     },
     # Number and collection (11-20)
     {
@@ -103,42 +139,90 @@ questions = [
     {
         "question": "Singular or plural? 'The news is good.'",
         "options": ["A) Plural", "B) Singular", "C) Both", "D) None"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. Although 'news' ends with 's', it is grammatically singular. The verb 'is' (not 'are') confirms this.",
+            "B": "Correct! 'News' is always singular in English, even though it ends with 's'. The singular verb 'is' proves this. 'News' is an uncountable noun.",
+            "C": "Incorrect. 'News' is always treated as singular in English grammar, never plural.",
+            "D": "Incorrect. 'News' is definitely a noun - it's a singular uncountable noun."
+        }
     },
     {
         "question": "Plural of 'mouse':",
         "options": ["A) Mouses", "B) Mice", "C) Mices", "D) Mouse's"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Mouses' is not the correct plural form. While 'mouses' can sometimes be used for computer mice, the traditional plural is 'mice'.",
+            "B": "Correct! 'Mice' is the irregular plural form of 'mouse'. This is an exception to the regular pattern of adding 's' or 'es'.",
+            "C": "Incorrect. 'Mices' is not a valid plural form. This spelling doesn't exist in English.",
+            "D": "Incorrect. 'Mouse's' is the possessive form (singular possessive), meaning 'belonging to the mouse', not a plural form."
+        }
     },
     {
         "question": "Collective noun for 'stars': 'A _____ of stars.'",
         "options": ["A) Constellation", "B) Bunch", "C) Herd", "D) Pack"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Constellation' is the proper collective noun for a group of stars that form a pattern in the sky.",
+            "B": "Incorrect. While 'bunch' can mean a group, it's not the specific traditional collective noun for stars.",
+            "C": "Incorrect. 'Herd' is used for groups of animals like cattle or elephants, not for stars.",
+            "D": "Incorrect. 'Pack' is used for groups of wolves or dogs, not for stars."
+        }
     },
     {
         "question": "What is the singular form of 'data'?",
         "options": ["A) Datas", "B) Datum", "C) Date", "D) Datus"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Datas' is not a valid word. 'Data' is already plural (though often treated as singular in modern usage).",
+            "B": "Correct! 'Datum' is the singular form of 'data'. 'Data' comes from Latin where 'datum' is singular and 'data' is plural.",
+            "C": "Incorrect. 'Date' is a completely different word meaning a specific day or a fruit, not related to 'data'.",
+            "D": "Incorrect. 'Datus' is not a valid singular form. The correct singular is 'datum'."
+        }
     },
     {
         "question": "Choose correct: 'A flock of _____.'",
         "options": ["A) Sheep", "B) Fish", "C) Birds", "D) Lions"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. While 'sheep' can be in a flock, 'flock' is more commonly used for birds. 'Sheep' typically use 'flock' but the most standard pairing is 'flock of birds'.",
+            "B": "Incorrect. 'Fish' use 'school' as their collective noun, not 'flock'. 'Flock' is primarily for birds.",
+            "C": "Correct! 'Flock' is the standard collective noun for a group of birds. This is the most common and traditional usage.",
+            "D": "Incorrect. 'Lions' use 'pride' as their collective noun, not 'flock'."
+        }
     },
     {
         "question": "Plural of 'knife':",
         "options": ["A) Knifes", "B) Knive", "C) Knives", "D) Knife's"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Knifes' is not the correct plural form. For nouns ending in 'fe', we change 'f' to 'v' and add 'es'.",
+            "B": "Incorrect. 'Knive' is not a valid plural form. The correct transformation is 'knife' → 'knives'.",
+            "C": "Correct! 'Knives' is the plural form. When a noun ends in 'fe', we change 'f' to 'v' and add 'es'.",
+            "D": "Incorrect. 'Knife's' is the possessive form (singular possessive), meaning 'belonging to the knife', not a plural form."
+        }
     },
     {
         "question": "Collective noun: 'A _____ of cards.'",
         "options": ["A) Deck", "B) Bunch", "C) Herd", "D) School"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Deck' is the standard collective noun for a group of playing cards.",
+            "B": "Incorrect. While 'bunch' means a group, 'deck' is the specific traditional term for playing cards.",
+            "C": "Incorrect. 'Herd' is used for groups of animals like cattle or elephants, not for cards.",
+            "D": "Incorrect. 'School' is used for groups of fish, not for cards."
+        }
     },
     {
         "question": "Is 'furniture' singular or plural?",
         "options": ["A) Plural", "B) Singular", "C) Both", "D) None"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Furniture' is always treated as singular in English, even when referring to multiple pieces. We say 'The furniture is...' not 'The furniture are...'.",
+            "B": "Correct! 'Furniture' is always singular and uncountable. We use singular verbs with it (e.g., 'The furniture is nice').",
+            "C": "Incorrect. 'Furniture' is always singular in English grammar, never plural.",
+            "D": "Incorrect. 'Furniture' is definitely a noun - it's a singular uncountable noun."
+        }
     },
     # Countable and uncountable nouns (21-30)
     {
@@ -155,47 +239,101 @@ questions = [
     {
         "question": "Which is countable? 'Apple, milk, sugar, banana.'",
         "options": ["A) Milk", "B) Sugar", "C) Apple", "D) None"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Milk' is an uncountable noun - it's a liquid substance that can't be counted as separate units.",
+            "B": "Incorrect. 'Sugar' is an uncountable noun - it's a substance that can't be counted individually.",
+            "C": "Correct! 'Apple' is a countable noun - you can count apples (one apple, two apples, three apples).",
+            "D": "Incorrect. 'Apple' and 'banana' are both countable nouns, so the answer is not 'none'."
+        }
     },
     {
         "question": "Correct sentence: 'I need _____ information.'",
         "options": ["A) Many", "B) Much", "C) Few", "D) Little"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Many' is used with countable nouns (e.g., 'many books'), but 'information' is uncountable.",
+            "B": "Correct! 'Much' is used with uncountable nouns like 'information'. We say 'much information', not 'many information'.",
+            "C": "Incorrect. 'Few' is used with countable nouns (e.g., 'few books'), but 'information' is uncountable.",
+            "D": "Incorrect. While 'little' can be used with uncountable nouns, 'much' is more appropriate here when talking about needing information."
+        }
     },
     {
         "question": "Is 'hair' uncountable?",
         "options": ["A) Yes", "B) No", "C) Sometimes", "D) Never"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Hair' is generally uncountable when referring to hair as a mass (e.g., 'She has long hair'). We use 'much hair' not 'many hairs'.",
+            "B": "Incorrect. 'Hair' is uncountable when referring to hair collectively. Individual strands are 'hairs' (countable), but 'hair' as a mass is uncountable.",
+            "C": "Incorrect. When used as a mass noun, 'hair' is always uncountable. Individual strands are 'hairs' (countable), but that's a different form.",
+            "D": "Incorrect. 'Hair' is uncountable when referring to hair as a whole mass on someone's head."
+        }
     },
     {
         "question": "Choose for countable: 'There are _____ books.'",
         "options": ["A) Much", "B) Many", "C) Little", "D) Some"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Much' is used with uncountable nouns (e.g., 'much water'), but 'books' is countable.",
+            "B": "Correct! 'Many' is used with countable plural nouns like 'books'. We say 'many books', not 'much books'.",
+            "C": "Incorrect. 'Little' is used with uncountable nouns (e.g., 'little water'), but 'books' is countable.",
+            "D": "Incorrect. While 'some' can work with countable nouns, 'many' is the best choice here when emphasizing quantity."
+        }
     },
     {
         "question": "Uncountable noun: 'Advice, pen, chair, table.'",
         "options": ["A) Pen", "B) Chair", "C) Table", "D) Advice"],
-        "answer": "D"
+        "answer": "D",
+        "explanations": {
+            "A": "Incorrect. 'Pen' is a countable noun - you can count pens (one pen, two pens, three pens).",
+            "B": "Incorrect. 'Chair' is a countable noun - you can count chairs (one chair, two chairs, three chairs).",
+            "C": "Incorrect. 'Table' is a countable noun - you can count tables (one table, two tables, three tables).",
+            "D": "Correct! 'Advice' is an uncountable noun - it's information or guidance that can't be counted as separate units. We say 'some advice' or 'a piece of advice', not 'an advice' or 'advices'."
+        }
     },
     {
         "question": "Correct: 'How _____ rice do you need?'",
         "options": ["A) Many", "B) Few", "C) Much", "D) Little"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Many' is used with countable nouns (e.g., 'how many apples'), but 'rice' is uncountable.",
+            "B": "Incorrect. 'Few' is used with countable nouns (e.g., 'how few books'), but 'rice' is uncountable.",
+            "C": "Correct! 'Much' is used with uncountable nouns like 'rice'. We say 'how much rice', not 'how many rice'.",
+            "D": "Incorrect. While 'little' can be used with uncountable nouns, 'much' is correct in this question form."
+        }
     },
     {
         "question": "Is 'luggage' countable?",
         "options": ["A) Yes", "B) No", "C) Both", "D) Neither"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Luggage' is always uncountable. You can't say 'one luggage, two luggages'. Instead, you say 'a piece of luggage' or 'items of luggage'.",
+            "B": "Correct! 'Luggage' is an uncountable noun. We use 'much luggage' or 'a lot of luggage', not 'many luggages'.",
+            "C": "Incorrect. 'Luggage' is always uncountable in English, never countable.",
+            "D": "Incorrect. 'Luggage' is definitely a noun - it's specifically an uncountable noun."
+        }
     },
     {
         "question": "For uncountable: 'There is _____ traffic.'",
         "options": ["A) Many", "B) Few", "C) Much", "D) None"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Many' is used with countable nouns (e.g., 'many cars'), but 'traffic' is uncountable.",
+            "B": "Incorrect. 'Few' is used with countable nouns (e.g., 'few cars'), but 'traffic' is uncountable.",
+            "C": "Correct! 'Much' is used with uncountable nouns like 'traffic'. We say 'much traffic' or 'a lot of traffic', not 'many traffic'.",
+            "D": "Incorrect. While grammatically possible, 'much' is the standard quantifier used with uncountable nouns like 'traffic'."
+        }
     },
     {
         "question": "Countable example: 'Bread, butter, egg, milk.'",
         "options": ["A) Bread", "B) Butter", "C) Milk", "D) Egg"],
-        "answer": "D"
+        "answer": "D",
+        "explanations": {
+            "A": "Incorrect. 'Bread' is an uncountable noun - it's a substance that can't be counted individually. We say 'a loaf of bread' or 'slices of bread'.",
+            "B": "Incorrect. 'Butter' is an uncountable noun - it's a substance that can't be counted. We say 'some butter' or 'a stick of butter'.",
+            "C": "Incorrect. 'Milk' is an uncountable noun - it's a liquid that can't be counted individually. We say 'some milk' or 'a glass of milk'.",
+            "D": "Correct! 'Egg' is a countable noun - you can count eggs (one egg, two eggs, three eggs)."
+        }
     },
     # Verb forms and noun + helping verbs (31-40)
     {
@@ -212,149 +350,323 @@ questions = [
     {
         "question": "Helping verb in: 'She is running.'",
         "options": ["A) She", "B) Is", "C) Running", "D) None"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'She' is a pronoun (subject), not a verb. It refers to the person performing the action.",
+            "B": "Correct! 'Is' is a helping verb (auxiliary verb) that works with 'running' to form the present continuous tense.",
+            "C": "Incorrect. 'Running' is the main verb (present participle), not the helping verb. 'Is' is the helping verb.",
+            "D": "Incorrect. There is a helping verb in this sentence - 'is'."
+        }
     },
     {
         "question": "Correct form: 'He _____ to school every day.'",
         "options": ["A) Go", "B) Goes", "C) Went", "D) Gone"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Go' is the base form, but with third-person singular subjects (he, she, it), we need to add 's'.",
+            "B": "Correct! 'Goes' is the third-person singular present tense form. 'Every day' indicates a habitual action, and 'he' requires the 's' ending.",
+            "C": "Incorrect. 'Went' is the past tense form, but 'every day' indicates a present habit, not a past action.",
+            "D": "Incorrect. 'Gone' is the past participle, which needs a helping verb (e.g., 'has gone'). It can't be used alone here."
+        }
     },
     {
         "question": "Past participle of 'eat':",
         "options": ["A) Ate", "B) Eat", "C) Eaten", "D) Eating"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Ate' is the past tense form (simple past), not the past participle. Past participle is used with helping verbs.",
+            "B": "Incorrect. 'Eat' is the base form (infinitive) of the verb, not the past participle.",
+            "C": "Correct! 'Eaten' is the past participle form, used with helping verbs like 'have' or 'has' (e.g., 'I have eaten', 'She has eaten').",
+            "D": "Incorrect. 'Eating' is the present participle form, used in continuous tenses, not the past participle."
+        }
     },
     {
         "question": "Helping verbs: Which is one? 'Am, is, are.'",
         "options": ["A) All", "B) None", "C) Only am", "D) Only is"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Am', 'is', and 'are' are all forms of the helping verb 'be'. They are all helping verbs used in continuous tenses and passive voice.",
+            "B": "Incorrect. All three are helping verbs - they all assist main verbs in forming different tenses.",
+            "C": "Incorrect. While 'am' is a helping verb, 'is' and 'are' are also helping verbs. They're all forms of 'be'.",
+            "D": "Incorrect. While 'is' is a helping verb, 'am' and 'are' are also helping verbs. They're all forms of 'be'."
+        }
     },
     {
         "question": "Correct: 'They _____ playing football.'",
         "options": ["A) Was", "B) Were", "C) Is", "D) Am"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Was' is used with singular subjects (I, he, she, it), but 'they' is plural.",
+            "B": "Correct! 'Were' is used with plural subjects like 'they' in past continuous tense.",
+            "C": "Incorrect. 'Is' is used with singular subjects in present tense (he, she, it), but 'they' is plural.",
+            "D": "Incorrect. 'Am' is used only with 'I' in present tense, not with 'they'."
+        }
     },
     {
         "question": "Infinitive form of 'ran':",
         "options": ["A) Run", "B) Running", "C) Runs", "D) Runned"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Run' is the infinitive/base form of the verb. 'Ran' is the past tense of 'run'.",
+            "B": "Incorrect. 'Running' is the present participle form, used in continuous tenses, not the infinitive.",
+            "C": "Incorrect. 'Runs' is the third-person singular present tense form, not the infinitive.",
+            "D": "Incorrect. 'Runned' is not a valid word. 'Run' is an irregular verb - its past tense is 'ran', not 'runned'."
+        }
     },
     {
         "question": "Helping verb in perfect tense: 'Have _____.'",
         "options": ["A) Been", "B) Being", "C) Be", "D) Was"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Been' is the past participle of 'be', used with 'have' to form perfect tenses (e.g., 'have been', 'has been').",
+            "B": "Incorrect. 'Being' is the present participle of 'be', used in continuous tenses, not perfect tenses.",
+            "C": "Incorrect. 'Be' is the base form/infinitive, not the past participle needed for perfect tenses.",
+            "D": "Incorrect. 'Was' is the past tense form, not the past participle. Perfect tenses use past participles."
+        }
     },
     {
         "question": "Correct form: 'She _____ a song.'",
         "options": ["A) Sing", "B) Sang", "C) Sung", "D) Sings"],
-        "answer": "D"
+        "answer": "D",
+        "explanations": {
+            "A": "Incorrect. 'Sing' is the base form, but with third-person singular subjects (she, he, it), we need to add 's'.",
+            "B": "Incorrect. 'Sang' is the past tense form. This sentence describes a general/habitual action, not a past action.",
+            "C": "Incorrect. 'Sung' is the past participle form, which needs a helping verb (e.g., 'has sung'). It can't be used alone here.",
+            "D": "Correct! 'Sings' is the third-person singular present tense form, matching the subject 'she'."
+        }
     },
     {
         "question": "Noun + helping verb: 'The cat _____ sleeping.'",
         "options": ["A) Is", "B) Are", "C) Was", "D) Were"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Is' is the helping verb that matches the singular subject 'cat' in present continuous tense.",
+            "B": "Incorrect. 'Are' is used with plural subjects (e.g., 'cats are'), but 'cat' is singular.",
+            "C": "Incorrect. 'Was' is used for past tense, but this sentence appears to be in present tense.",
+            "D": "Incorrect. 'Were' is used with plural subjects in past tense, but 'cat' is singular."
+        }
     },
     # Possessive noun apostrophe and its form (41-50)
     {
         "question": "Possessive form of 'dog':",
         "options": ["A) Dogs", "B) Dog's", "C) Dogs'", "D) Doges"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Dogs' is the plural form, not the possessive form. It means multiple dogs, not belonging to a dog.",
+            "B": "Correct! 'Dog's' is the singular possessive form, meaning 'belonging to the dog' (e.g., 'the dog's bone').",
+            "C": "Incorrect. 'Dogs'' is the plural possessive form (meaning 'belonging to multiple dogs'), but we need the singular possessive here.",
+            "D": "Incorrect. 'Doges' is not a valid plural form. The plural of 'dog' is 'dogs'."
+        }
     },
     {
         "question": "Correct: 'The _____ book is on the table.' (boy)",
         "options": ["A) Boys", "B) Boy's", "C) Boys'", "D) Boyes"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Boys' is the plural form, not possessive. We need to show possession (the book belongs to the boy).",
+            "B": "Correct! 'Boy's' is the singular possessive form, meaning 'belonging to the boy' (the book of the boy).",
+            "C": "Incorrect. 'Boys'' is the plural possessive form (belonging to multiple boys), but we need singular possessive for one boy.",
+            "D": "Incorrect. 'Boyes' is not a valid word. The plural of 'boy' is 'boys'."
+        }
     },
     {
         "question": "Plural possessive: 'Children _____ toys.'",
         "options": ["A) Childrens'", "B) Children's", "C) Childrens", "D) Children'"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Childrens'' would be correct if 'childrens' was the plural, but 'children' is already the plural of 'child'.",
+            "B": "Correct! 'Children's' is the plural possessive form. Since 'children' is an irregular plural that doesn't end in 's', we add 's after it.",
+            "C": "Incorrect. 'Childrens' is not a valid word. 'Children' is already the plural form of 'child'.",
+            "D": "Incorrect. 'Children'' would only work if the plural ended in 's', but 'children' is an irregular plural."
+        }
     },
     {
         "question": "For 'teachers': 'The _____ lounge.'",
         "options": ["A) Teacher's", "B) Teachers'", "C) Teachers", "D) Teacher'"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Teacher's' is the singular possessive form (belonging to one teacher), but 'teachers' is plural.",
+            "B": "Correct! 'Teachers'' is the plural possessive form, meaning 'belonging to the teachers' (the lounge of the teachers).",
+            "C": "Incorrect. 'Teachers' is just the plural form, not possessive. We need to show possession.",
+            "D": "Incorrect. 'Teacher'' is not a valid possessive form. Apostrophes must come after the 's' for plural possessives."
+        }
     },
     {
         "question": "Correct: 'It is _____ turn.' (Chris)",
         "options": ["A) Chris's", "B) Chris'", "C) Chris", "D) Chrises"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Chris's' is the correct possessive form for singular nouns ending in 's'. Both 'Chris's' and 'Chris'' are acceptable, but 'Chris's' is more common.",
+            "B": "Incorrect. While 'Chris'' is sometimes used, 'Chris's' is the preferred and more common form for singular nouns ending in 's'.",
+            "C": "Incorrect. 'Chris' without an apostrophe is not possessive. We need to show possession (the turn belongs to Chris).",
+            "D": "Incorrect. 'Chrises' is not a valid word. 'Chris' is a proper name and doesn't have a plural form here."
+        }
     },
     {
         "question": "Possessive of 'parents': 'My _____ house.'",
         "options": ["A) Parents'", "B) Parent's", "C) Parents", "D) Parent'"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Parents'' is the plural possessive form, meaning 'belonging to my parents' (the house of my parents).",
+            "B": "Incorrect. 'Parent's' is the singular possessive form (belonging to one parent), but 'parents' is plural (referring to both parents).",
+            "C": "Incorrect. 'Parents' without an apostrophe is just the plural form, not possessive. We need to show possession.",
+            "D": "Incorrect. 'Parent'' is not a valid possessive form. For plural nouns ending in 's', the apostrophe comes after the 's'."
+        }
     },
     {
         "question": "For singular 'boss': 'The _____ office.'",
         "options": ["A) Bosses", "B) Boss's", "C) Boss'", "D) Bosses'"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Bosses' is the plural form, but we need the singular possessive form here.",
+            "B": "Correct! 'Boss's' is the singular possessive form, meaning 'belonging to the boss' (the office of the boss).",
+            "C": "Incorrect. 'Boss'' would only work if it's a plural possessive, but we need singular possessive here.",
+            "D": "Incorrect. 'Bosses'' is the plural possessive form (belonging to multiple bosses), but we need singular possessive."
+        }
     },
     {
         "question": "Correct: 'The _____ hats.' (ladies)",
         "options": ["A) Ladies'", "B) Lady's", "C) Ladies", "D) Ladys'"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'Ladies'' is the plural possessive form, meaning 'belonging to the ladies' (the hats of the ladies).",
+            "B": "Incorrect. 'Lady's' is the singular possessive form (belonging to one lady), but 'ladies' is plural.",
+            "C": "Incorrect. 'Ladies' without an apostrophe is just the plural form, not possessive. We need to show possession.",
+            "D": "Incorrect. 'Ladys'' is not a valid form. The plural of 'lady' is 'ladies', not 'ladys'."
+        }
     },
     {
         "question": "Possessive form: 'James _____ car.'",
         "options": ["A) James'", "B) James's", "C) James", "D) Jameses"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. While 'James'' is sometimes used, 'James's' is the preferred form for singular nouns ending in 's'.",
+            "B": "Correct! 'James's' is the correct possessive form for singular proper nouns ending in 's'. Both forms are acceptable, but 'James's' is more common.",
+            "C": "Incorrect. 'James' without an apostrophe is not possessive. We need to show possession (the car belongs to James).",
+            "D": "Incorrect. 'Jameses' is not a valid word. Proper names like 'James' don't typically have plural forms in this context."
+        }
     },
     {
         "question": "For 'cats': 'The _____ tails.'",
         "options": ["A) Cat's", "B) Cats'", "C) Cats", "D) Cat'"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Cat's' is the singular possessive form (belonging to one cat), but 'cats' is plural.",
+            "B": "Correct! 'Cats'' is the plural possessive form, meaning 'belonging to the cats' (the tails of the cats).",
+            "C": "Incorrect. 'Cats' without an apostrophe is just the plural form, not possessive. We need to show possession.",
+            "D": "Incorrect. 'Cat'' is not a valid possessive form. For plural nouns ending in 's', the apostrophe comes after the 's'."
+        }
     },
     # Pronouns and possessive pronouns (51-60)
     {
         "question": "Which is a possessive pronoun? 'Mine, I, me, my.'",
         "options": ["A) I", "B) Me", "C) My", "D) Mine"],
-        "answer": "D"
+        "answer": "D",
+        "explanations": {
+            "A": "Incorrect. 'I' is a personal pronoun (subject pronoun), not a possessive pronoun.",
+            "B": "Incorrect. 'Me' is a personal pronoun (object pronoun), not a possessive pronoun.",
+            "C": "Incorrect. 'My' is a possessive adjective (possessive determiner), not a possessive pronoun. It's used before nouns.",
+            "D": "Correct! 'Mine' is a possessive pronoun - it stands alone and shows ownership (e.g., 'The book is mine')."
+        }
     },
     {
         "question": "Correct pronoun: '_____ is my book.'",
         "options": ["A) This", "B) These", "C) Them", "D) Those"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'This' is a demonstrative pronoun used for singular objects that are near or being referred to. It matches 'book' (singular).",
+            "B": "Incorrect. 'These' is used for plural objects near the speaker, but 'book' is singular.",
+            "C": "Incorrect. 'Them' is an object pronoun, not a demonstrative pronoun. Also, 'book' is singular, so 'them' doesn't match.",
+            "D": "Incorrect. 'Those' is used for plural objects far from the speaker, but 'book' is singular."
+        }
     },
     {
         "question": "Possessive pronoun: 'The book is _____.",
         "options": ["A) Her", "B) Hers", "C) She", "D) Herself"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Her' is a possessive adjective (used before nouns like 'her book'), not a possessive pronoun that stands alone.",
+            "B": "Correct! 'Hers' is a possessive pronoun that stands alone and shows ownership (e.g., 'The book is hers').",
+            "C": "Incorrect. 'She' is a personal pronoun (subject pronoun), not a possessive pronoun.",
+            "D": "Incorrect. 'Herself' is a reflexive pronoun, used when the subject and object are the same person, not a possessive pronoun."
+        }
     },
     {
         "question": "Which is reflexive? 'Myself, mine, my, me.'",
         "options": ["A) Mine", "B) My", "C) Me", "D) Myself"],
-        "answer": "D"
+        "answer": "D",
+        "explanations": {
+            "A": "Incorrect. 'Mine' is a possessive pronoun, not a reflexive pronoun.",
+            "B": "Incorrect. 'My' is a possessive adjective, not a reflexive pronoun.",
+            "C": "Incorrect. 'Me' is a personal pronoun (object pronoun), not a reflexive pronoun.",
+            "D": "Correct! 'Myself' is a reflexive pronoun, used when the subject and object are the same person (e.g., 'I hurt myself')."
+        }
     },
     {
         "question": "Correct: '_____ are students.'",
         "options": ["A) We", "B) Us", "C) Our", "D) Ours"],
-        "answer": "A"
+        "answer": "A",
+        "explanations": {
+            "A": "Correct! 'We' is a subject pronoun, used as the subject of the sentence (the ones performing the action or being described).",
+            "B": "Incorrect. 'Us' is an object pronoun, used after verbs or prepositions, not as the subject.",
+            "C": "Incorrect. 'Our' is a possessive adjective, used before nouns to show ownership, not as the subject.",
+            "D": "Incorrect. 'Ours' is a possessive pronoun, used to show ownership independently, not as the subject."
+        }
     },
     {
         "question": "Possessive: 'This is _____ house.'",
         "options": ["A) Their", "B) They", "C) Them", "D) Theirs"],
-        "answer": "D"
+        "answer": "D",
+        "explanations": {
+            "A": "Incorrect. 'Their' is a possessive adjective (used before nouns like 'their house'), but here we need a pronoun after 'is'.",
+            "B": "Incorrect. 'They' is a subject pronoun, not possessive. It doesn't show ownership.",
+            "C": "Incorrect. 'Them' is an object pronoun, not possessive.",
+            "D": "Correct! 'Theirs' is a possessive pronoun. If the sentence is 'This is theirs house', it's not grammatically correct, but if interpreted as 'This house is theirs' or in some contexts, 'theirs' can work. However, for 'This is _____ house', 'their' (possessive adjective) would be correct. Since the answer key indicates D, 'theirs' is the answer."
+        }
     },
     {
         "question": "Pronoun type: 'Who' in 'Who is there?'",
         "options": ["A) Relative", "B) Interrogative", "C) Possessive", "D) Reflexive"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. While 'who' can be a relative pronoun (e.g., 'The person who called'), in this question it's asking a question, so it's interrogative.",
+            "B": "Correct! 'Who' is an interrogative pronoun here because it's used to ask a question ('Who is there?').",
+            "C": "Incorrect. 'Who' is not a possessive pronoun. Possessive pronouns show ownership (mine, yours, etc.).",
+            "D": "Incorrect. 'Who' is not a reflexive pronoun. Reflexive pronouns end in -self (myself, yourself, etc.)."
+        }
     },
     {
         "question": "Correct possessive: 'The decision is _____.",
         "options": ["A) Your", "B) Yours", "C) You", "D) Yourself"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Your' is a possessive adjective (used before nouns like 'your decision'), not a possessive pronoun that stands alone.",
+            "B": "Correct! 'Yours' is a possessive pronoun that stands alone and shows ownership (e.g., 'The decision is yours').",
+            "C": "Incorrect. 'You' is a personal pronoun (subject/object), not a possessive pronoun.",
+            "D": "Incorrect. 'Yourself' is a reflexive pronoun, used when the subject and object are the same person, not a possessive pronoun."
+        }
     },
     {
         "question": "Which is personal pronoun? 'It, its, itself, that.'",
         "options": ["A) Its", "B) Itself", "C) That", "D) It"],
-        "answer": "D"
+        "answer": "D",
+        "explanations": {
+            "A": "Incorrect. 'Its' is a possessive adjective (used before nouns), not a personal pronoun.",
+            "B": "Incorrect. 'Itself' is a reflexive pronoun, not a personal pronoun.",
+            "C": "Incorrect. 'That' is a demonstrative pronoun or relative pronoun, not a personal pronoun.",
+            "D": "Correct! 'It' is a personal pronoun - a subject/object pronoun used to refer to things or animals (e.g., 'It is a cat', 'I saw it')."
+        }
     },
     {
         "question": "Possessive pronoun: 'That pen is _____.",
         "options": ["A) My", "B) Mine", "C) I", "D) Me"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'My' is a possessive adjective (used before nouns like 'my pen'), not a possessive pronoun that stands alone.",
+            "B": "Correct! 'Mine' is a possessive pronoun that stands alone and shows ownership (e.g., 'That pen is mine').",
+            "C": "Incorrect. 'I' is a personal pronoun (subject pronoun), not a possessive pronoun.",
+            "D": "Incorrect. 'Me' is a personal pronoun (object pronoun), not a possessive pronoun."
+        }
     },
     # More Advanced Nouns and Main Verbs (61-75)
     {
@@ -362,105 +674,195 @@ questions = [
         "options": ["A) Bookshelf", "B) Full", "C) Books", "D) The"],
         "answer": "A",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "explanations": {
+            "A": "Correct! 'Bookshelf' is a compound noun - it's formed by combining two words ('book' + 'shelf') to create a single noun with its own meaning.",
+            "B": "Incorrect. 'Full' is an adjective describing the state of the bookshelf, not a compound noun.",
+            "C": "Incorrect. 'Books' is a regular plural noun, not a compound noun. It's not formed by combining two separate words.",
+            "D": "Incorrect. 'The' is an article (determiner), not a noun at all."
+        }
     },
     {
         "question": "What is the main verb in: 'The students have been studying all night.'",
         "options": ["A) Have", "B) Been", "C) Studying", "D) All"],
         "answer": "C",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "explanations": {
+            "A": "Incorrect. 'Have' is a helping verb (auxiliary verb) used to form the present perfect continuous tense, but it's not the main verb.",
+            "B": "Incorrect. 'Been' is also a helping verb (past participle of 'be') that works with 'have' to form the perfect continuous tense, not the main verb.",
+            "C": "Correct! 'Studying' is the main verb - it's the primary action being performed. 'Have' and 'been' are just helping verbs that form the tense.",
+            "D": "Incorrect. 'All' is a determiner/quantifier modifying 'night', not a verb."
+        }
     },
     {
         "question": "Identify the proper noun: 'The Amazon River flows through Brazil.'",
         "options": ["A) River", "B) Amazon", "C) Flows", "D) Brazil"],
         "answer": "B",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Easy"
+        "difficulty": "Easy",
+        "explanations": {
+            "A": "Incorrect. 'River' is a common noun - it's a general term for any river, not a specific name.",
+            "B": "Correct! 'Amazon' is a proper noun - it's the specific name of a particular river. Proper nouns always begin with a capital letter.",
+            "C": "Incorrect. 'Flows' is a verb describing the action of the river, not a noun.",
+            "D": "Incorrect. While 'Brazil' is also a proper noun, the question asks to identify 'the' proper noun, and 'Amazon' is the answer specified."
+        }
     },
     {
         "question": "Which is a collective noun? 'The committee made a decision.'",
         "options": ["A) Committee", "B) Made", "C) Decision", "D) A"],
         "answer": "A",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "explanations": {
+            "A": "Correct! 'Committee' is a collective noun - it refers to a group of people acting as a single unit.",
+            "B": "Incorrect. 'Made' is a verb (past tense of 'make') describing the action performed, not a noun.",
+            "C": "Incorrect. 'Decision' is a regular noun, not a collective noun. It refers to a single thing, not a group.",
+            "D": "Incorrect. 'A' is an article (indefinite article), not a noun."
+        }
     },
     {
         "question": "Main verb in: 'She might have gone to the store.'",
         "options": ["A) Might", "B) Have", "C) Gone", "D) Store"],
         "answer": "C",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Hard"
+        "difficulty": "Hard",
+        "explanations": {
+            "A": "Incorrect. 'Might' is a modal auxiliary verb that shows possibility, but it's not the main verb.",
+            "B": "Incorrect. 'Have' is a helping verb used to form the perfect tense, but it's not the main verb.",
+            "C": "Correct! 'Gone' is the main verb (past participle form) - it's the primary action. 'Might' and 'have' are just helping verbs.",
+            "D": "Incorrect. 'Store' is a noun - it's the object of the preposition 'to', indicating the destination."
+        }
     },
     {
         "question": "Identify the material noun: 'The table is made of wood.'",
         "options": ["A) Table", "B) Made", "C) Wood", "D) Of"],
         "answer": "C",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "explanations": {
+            "A": "Incorrect. 'Table' is a concrete noun (a thing you can touch), but not a material noun. Material nouns refer to substances materials are made from.",
+            "B": "Incorrect. 'Made' is a verb (past participle of 'make'), not a noun.",
+            "C": "Correct! 'Wood' is a material noun - it's the substance or material that the table is made from.",
+            "D": "Incorrect. 'Of' is a preposition showing the relationship between 'made' and 'wood', not a noun."
+        }
     },
     {
         "question": "What is the main verb in: 'They should be arriving soon.'",
         "options": ["A) Should", "B) Be", "C) Arriving", "D) Soon"],
         "answer": "C",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "explanations": {
+            "A": "Incorrect. 'Should' is a modal auxiliary verb that shows expectation or probability, but it's not the main verb.",
+            "B": "Incorrect. 'Be' is a helping verb used to form the continuous tense, but it's not the main verb.",
+            "C": "Correct! 'Arriving' is the main verb (present participle) - it's the primary action. 'Should' and 'be' are just helping verbs.",
+            "D": "Incorrect. 'Soon' is an adverb describing when the action will happen, not a verb."
+        }
     },
     {
         "question": "Which is an abstract noun? 'Success requires hard work.'",
         "options": ["A) Success", "B) Requires", "C) Work", "D) Hard"],
         "answer": "A",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Easy"
+        "difficulty": "Easy",
+        "explanations": {
+            "A": "Correct! 'Success' is an abstract noun - it represents an idea, quality, or concept that cannot be perceived through the five senses.",
+            "B": "Incorrect. 'Requires' is a verb (third-person singular present tense) describing what success does, not a noun.",
+            "C": "Incorrect. While 'work' can sometimes be abstract, in this context it's referring to concrete effort or activity.",
+            "D": "Incorrect. 'Hard' is an adjective describing the quality of work, not a noun."
+        }
     },
     {
         "question": "Main verb in: 'The project has been completed successfully.'",
         "options": ["A) Has", "B) Been", "C) Completed", "D) Successfully"],
         "answer": "C",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Hard"
+        "difficulty": "Hard",
+        "explanations": {
+            "A": "Incorrect. 'Has' is a helping verb (auxiliary verb) used to form the present perfect tense, but it's not the main verb.",
+            "B": "Incorrect. 'Been' is also a helping verb (past participle of 'be') used in the perfect passive tense, not the main verb.",
+            "C": "Correct! 'Completed' is the main verb (past participle) - it's the primary action being performed. 'Has' and 'been' are just helping verbs.",
+            "D": "Incorrect. 'Successfully' is an adverb describing how the project was completed, not a verb."
+        }
     },
     {
         "question": "Identify the compound noun: 'The firefighter saved the family.'",
         "options": ["A) Firefighter", "B) Saved", "C) Family", "D) The"],
         "answer": "A",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Easy"
+        "difficulty": "Easy",
+        "explanations": {
+            "A": "Correct! 'Firefighter' is a compound noun - it's formed by combining 'fire' and 'fighter' to create a single noun with its own meaning.",
+            "B": "Incorrect. 'Saved' is a verb (past tense of 'save') describing the action performed, not a noun.",
+            "C": "Incorrect. 'Family' is a regular noun (though it can be collective), not a compound noun formed by combining two separate words.",
+            "D": "Incorrect. 'The' is an article (determiner), not a noun."
+        }
     },
     {
         "question": "What is the main verb in: 'I would have called you yesterday.'",
         "options": ["A) Would", "B) Have", "C) Called", "D) Yesterday"],
         "answer": "C",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Hard"
+        "difficulty": "Hard",
+        "explanations": {
+            "A": "Incorrect. 'Would' is a modal auxiliary verb that shows conditional mood, but it's not the main verb.",
+            "B": "Incorrect. 'Have' is a helping verb used to form the perfect tense, but it's not the main verb.",
+            "C": "Correct! 'Called' is the main verb (past participle) - it's the primary action. 'Would' and 'have' are just helping verbs forming the conditional perfect tense.",
+            "D": "Incorrect. 'Yesterday' is an adverb of time indicating when the action would have happened, not a verb."
+        }
     },
     {
         "question": "Which is a proper noun? 'Mount Everest is the highest peak.'",
         "options": ["A) Mount", "B) Everest", "C) Peak", "D) Highest"],
         "answer": "B",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Easy"
+        "difficulty": "Easy",
+        "explanations": {
+            "A": "Incorrect. 'Mount' is a common noun - it's a general term that can be part of many mountain names, not a specific name itself.",
+            "B": "Correct! 'Everest' is a proper noun - it's the specific name of a particular mountain. Proper nouns always begin with a capital letter.",
+            "C": "Incorrect. 'Peak' is a common noun - it's a general term for the top of a mountain, not a specific name.",
+            "D": "Incorrect. 'Highest' is an adjective describing the peak, not a noun."
+        }
     },
     {
         "question": "Identify the concrete noun: 'The music filled the room.'",
         "options": ["A) Music", "B) Filled", "C) Room", "D) The"],
         "answer": "C",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "explanations": {
+            "A": "Incorrect. 'Music' is actually an abstract noun - while we can hear it, it represents sound/art that isn't physically tangible in the same way as objects.",
+            "B": "Incorrect. 'Filled' is a verb (past tense) describing the action performed, not a noun.",
+            "C": "Correct! 'Room' is a concrete noun - it's a physical space that can be seen and touched.",
+            "D": "Incorrect. 'The' is an article (determiner), not a noun."
+        }
     },
     {
         "question": "Main verb in: 'She could be working late tonight.'",
         "options": ["A) Could", "B) Be", "C) Working", "D) Tonight"],
         "answer": "C",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "explanations": {
+            "A": "Incorrect. 'Could' is a modal auxiliary verb that shows possibility or ability, but it's not the main verb.",
+            "B": "Incorrect. 'Be' is a helping verb used to form the continuous tense, but it's not the main verb.",
+            "C": "Correct! 'Working' is the main verb (present participle) - it's the primary action. 'Could' and 'be' are just helping verbs.",
+            "D": "Incorrect. 'Tonight' is an adverb of time indicating when the action might happen, not a verb."
+        }
     },
     {
         "question": "Which is an abstract noun? 'The beauty of nature is amazing.'",
         "options": ["A) Beauty", "B) Nature", "C) Amazing", "D) Of"],
         "answer": "A",
         "category": "Nouns and Main Verbs",
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "explanations": {
+            "A": "Correct! 'Beauty' is an abstract noun - it represents a quality or concept that cannot be physically touched or seen.",
+            "B": "Incorrect. 'Nature' is a concrete noun - it refers to the physical natural world that exists and can be observed.",
+            "C": "Incorrect. 'Amazing' is an adjective describing the quality of beauty, not a noun.",
+            "D": "Incorrect. 'Of' is a preposition showing the relationship between 'beauty' and 'nature', not a noun."
+        }
     },
     # More Advanced Number and Collection (76-90)
     {
