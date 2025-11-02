@@ -6,22 +6,46 @@ questions = [
     {
         "question": "Identify the noun in the sentence: 'The dog runs quickly.'",
         "options": ["A) Runs", "B) Quickly", "C) Dog", "D) The"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Runs' is a verb, which describes an action. In this sentence, it tells us what the dog does.",
+            "B": "Incorrect. 'Quickly' is an adverb, which modifies the verb 'runs' by describing how the action is performed.",
+            "C": "Correct! 'Dog' is a noun - it's a person, place, thing, or idea. In this sentence, 'dog' is the subject, the thing performing the action.",
+            "D": "Incorrect. 'The' is an article (a determiner), not a noun. It's used to specify which dog we're talking about."
+        }
     },
     {
         "question": "What is the main verb in: 'She is eating an apple.'",
         "options": ["A) Is", "B) Eating", "C) An", "D) Apple"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Is' is a helping verb (auxiliary verb) that works with the main verb 'eating' to form the present continuous tense.",
+            "B": "Correct! 'Eating' is the main verb - it's the primary action being performed. 'Is' just helps to form the tense.",
+            "C": "Incorrect. 'An' is an article (indefinite article) used before a noun that begins with a vowel sound.",
+            "D": "Incorrect. 'Apple' is a noun - it's the object of the verb, the thing being eaten."
+        }
     },
     {
         "question": "Which word is a proper noun? 'Paris is a beautiful city.'",
         "options": ["A) Beautiful", "B) City", "C) Is", "D) Paris"],
-        "answer": "D"
+        "answer": "D",
+        "explanations": {
+            "A": "Incorrect. 'Beautiful' is an adjective that describes the city. It's not a proper noun because it's not a specific name.",
+            "B": "Incorrect. 'City' is a common noun - it's a general term for any city, not a specific name.",
+            "C": "Incorrect. 'Is' is a verb (specifically a linking verb) that connects the subject to its description.",
+            "D": "Correct! 'Paris' is a proper noun - it's the specific name of a particular city. Proper nouns always begin with a capital letter."
+        }
     },
     {
         "question": "Identify the abstract noun: 'Honesty is the best policy.'",
         "options": ["A) Best", "B) Policy", "C) Honesty", "D) Is"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Best' is an adjective in its superlative form, describing 'policy'. It tells us about the quality of the policy.",
+            "B": "Incorrect. 'Policy' is a concrete noun - it refers to something that exists as a concept or document that can be seen or touched.",
+            "C": "Correct! 'Honesty' is an abstract noun - it represents an idea, quality, or state that cannot be perceived through the five senses.",
+            "D": "Incorrect. 'Is' is a verb (linking verb) that connects 'Honesty' (subject) with 'policy' (predicate nominative)."
+        }
     },
     {
         "question": "What is the main verb in: 'They have been playing football.'",
@@ -57,12 +81,24 @@ questions = [
     {
         "question": "What is the plural form of 'child'?",
         "options": ["A) Childs", "B) Childes", "C) Children", "D) Childrens"],
-        "answer": "C"
+        "answer": "C",
+        "explanations": {
+            "A": "Incorrect. 'Childs' is not a valid plural form. Most nouns form plurals by adding 's', but 'child' is irregular.",
+            "B": "Incorrect. 'Childes' is not a valid plural form. This spelling doesn't exist in English.",
+            "C": "Correct! 'Children' is the irregular plural form of 'child'. It doesn't follow the regular pattern of adding 's' or 'es'.",
+            "D": "Incorrect. 'Childrens' adds an extra 's', which is incorrect. 'Children' is already the plural form."
+        }
     },
     {
         "question": "Choose the correct collective noun: 'A _____ of wolves.'",
         "options": ["A) Herd", "B) Pack", "C) Flock", "D) School"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Herd' is used for groups of certain animals like cattle, elephants, or deer, but not for wolves.",
+            "B": "Correct! 'Pack' is the specific collective noun for a group of wolves. This is the traditional term used for these animals.",
+            "C": "Incorrect. 'Flock' is used for groups of birds (like a flock of birds) or sometimes sheep, but not for wolves.",
+            "D": "Incorrect. 'School' is used for groups of fish (like a school of fish), but not for wolves."
+        }
     },
     {
         "question": "Singular or plural? 'The news is good.'",
@@ -108,7 +144,13 @@ questions = [
     {
         "question": "Is 'water' countable or uncountable?",
         "options": ["A) Countable", "B) Uncountable", "C) Both", "D) Neither"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Water' cannot be counted individually. You can't say 'one water, two waters' in the same way you can count apples or books.",
+            "B": "Correct! 'Water' is an uncountable noun because it refers to a substance or material that can't be counted as separate units. We use 'much' or 'little' with uncountable nouns, not 'many' or 'few'.",
+            "C": "Incorrect. While you can count containers of water (glasses, bottles), the word 'water' itself is uncountable.",
+            "D": "Incorrect. 'Water' is definitely a noun - it's specifically an uncountable noun."
+        }
     },
     {
         "question": "Which is countable? 'Apple, milk, sugar, banana.'",
@@ -159,7 +201,13 @@ questions = [
     {
         "question": "Past tense of 'go':",
         "options": ["A) Goed", "B) Went", "C) Gone", "D) Goes"],
-        "answer": "B"
+        "answer": "B",
+        "explanations": {
+            "A": "Incorrect. 'Goed' doesn't exist in English. 'Go' is an irregular verb that doesn't follow the pattern of adding '-ed' for past tense.",
+            "B": "Correct! 'Went' is the irregular past tense form of 'go'. This is an exception to the regular verb pattern.",
+            "C": "Incorrect. 'Gone' is the past participle form, used with helping verbs like 'have' (e.g., 'I have gone'), not the simple past tense.",
+            "D": "Incorrect. 'Goes' is the third-person singular present tense form (e.g., 'He goes'), not the past tense."
+        }
     },
     {
         "question": "Helping verb in: 'She is running.'",
@@ -954,7 +1002,13 @@ questions.extend([
         "options": ["A) She", "B) Wore", "C) Beautiful", "D) Dress"],
         "answer": "C",
         "category": "Adjectives - Identification",
-        "difficulty": "Easy"
+        "difficulty": "Easy",
+        "explanations": {
+            "A": "Incorrect. 'She' is a pronoun - it replaces or refers to a noun (the person wearing the dress).",
+            "B": "Incorrect. 'Wore' is a verb (past tense of 'wear') - it describes the action being performed.",
+            "C": "Correct! 'Beautiful' is an adjective - it describes or modifies the noun 'dress' by telling us what quality the dress has.",
+            "D": "Incorrect. 'Dress' is a noun - it's the thing being described, not the word that describes it."
+        }
     },
     {
         "question": "Which word is an adjective? 'The tall building touched the sky.'",
@@ -1028,7 +1082,13 @@ questions.extend([
         "options": ["A) a", "B) an", "C) the", "D) no article"],
         "answer": "B",
         "category": "Articles (A/An/The)",
-        "difficulty": "Easy"
+        "difficulty": "Easy",
+        "explanations": {
+            "A": "Incorrect. We use 'a' before words that begin with a consonant sound, but 'honest' starts with a vowel sound (the 'h' is silent).",
+            "B": "Correct! We use 'an' before words that begin with a vowel sound. Since 'honest' is pronounced with a silent 'h', it sounds like it starts with a vowel, so 'an' is correct.",
+            "C": "Incorrect. 'The' is the definite article used for specific or previously mentioned nouns. Here, we're talking about any honest man, not a specific one.",
+            "D": "Incorrect. We need an article here. The sentence needs either 'a' or 'an' to be grammatically correct."
+        }
     },
     {
         "question": "Select the correct article: 'I saw _____ eagle flying.'",
@@ -1058,7 +1118,13 @@ questions.extend([
         "options": ["A) In", "B) On", "C) At", "D) Over"],
         "answer": "B",
         "category": "Prepositions",
-        "difficulty": "Easy"
+        "difficulty": "Easy",
+        "explanations": {
+            "A": "Incorrect. 'In' suggests being inside or within something. We sit on top of a chair, not inside it (unless it's an enclosed space like a car seat).",
+            "B": "Correct! 'On' is used when something is positioned above and in contact with a surface. When you sit on a chair, you're on top of the seat surface.",
+            "C": "Incorrect. 'At' is used for specific points or locations (e.g., 'at the door', 'at the table'), but for sitting, we use 'on' for chairs.",
+            "D": "Incorrect. 'Over' suggests being above something without contact, or moving across something. It doesn't describe the position of sitting on a chair."
+        }
     },
     {
         "question": "Select the best preposition: 'We arrived _____ the airport early.'",
@@ -1134,7 +1200,13 @@ questions.extend([
         "options": ["A) go", "B) goes", "C) went", "D) gone"],
         "answer": "B",
         "category": "Tenses",
-        "difficulty": "Easy"
+        "difficulty": "Easy",
+        "explanations": {
+            "A": "Incorrect. 'Go' is the base form, but with third-person singular subjects (she, he, it), we need to add 's' to the verb.",
+            "B": "Correct! 'Goes' is the third-person singular present tense form. 'Every day' indicates a habitual action in the present, and 'she' requires the 's' ending.",
+            "C": "Incorrect. 'Went' is the past tense form. It would be used for actions that happened in the past, not for something that happens 'every day' (present habit).",
+            "D": "Incorrect. 'Gone' is the past participle form, which needs a helping verb (e.g., 'has gone', 'had gone'). It can't be used alone in this sentence."
+        }
     },
     {
         "question": "Select the correct past perfect form: 'They _____ before we arrived.'",
@@ -1230,7 +1302,8 @@ class EnglishQuiz:
                 print("❌ Invalid input! Please enter A, B, C, or D.")
     
     def display_result(self, correct: bool, user_answer: str, correct_answer: str):
-        """Display result with feedback"""
+        """Display result with feedback and explanations"""
+        print("\n" + "─" * 60)
         if correct:
             print("✅ Correct! Well done!")
         else:
@@ -1242,6 +1315,25 @@ class EnglishQuiz:
                 'correct_answer': correct_answer,
                 'options': self.current_question['options']
             })
+        
+        # Display explanations for all options
+        if 'explanations' in self.current_question:
+            print("\n📚 EXPLANATIONS:")
+            print("─" * 60)
+            explanations = self.current_question['explanations']
+            option_labels = ['A', 'B', 'C', 'D']
+            
+            for label in option_labels:
+                if label in explanations:
+                    is_correct = (label == correct_answer)
+                    status = "✅ CORRECT" if is_correct else "❌ INCORRECT"
+                    print(f"\n{label}) {status}")
+                    print(f"   {explanations[label]}")
+            print()
+        else:
+            # Fallback if no explanations provided
+            print("\n💡 Tip: Review why the correct answer is right and why others are wrong.")
+            print()
     
     def display_progress(self, current: int, total: int):
         """Display progress bar"""
