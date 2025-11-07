@@ -1649,6 +1649,760 @@ questions.extend([
     }
 ])
 
+# New Tense Practice Prompts (Prompt-to-Tense)
+# These convert rich open-ended prompts into multiple-choice items that
+# identify the primary tense/form they target. This keeps compatibility
+# with the quiz app while preserving your curated prompts.
+questions.extend([
+    # 1) Usual Activities – Simple Present (habit/routine)
+    {
+        "question": "Which form best fits this prompt's target use? 'How do you typically structure your mornings on weekdays, and what part of the routine sets the tone for your day?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Usual Activities",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What habits help you stay productive when you don't feel motivated?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Usual Activities",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'How do you balance exercise, work, and downtime during a normal week?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Usual Activities",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What small daily choices do you make that have a big impact over time?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Usual Activities",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'How do you usually handle unexpected interruptions during your workday?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Usual Activities",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Which hobbies do you regularly pursue, and why do they stick?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Usual Activities",
+        "difficulty": "Medium"
+    },
+
+    # 2) Factual Descriptions – Simple Present (facts/definitions/processes)
+    {
+        "question": "Which form best fits this prompt's target use? 'How does your city's public transport system operate during peak hours?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Factual Descriptions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What steps does your organization follow to approve a new project?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Factual Descriptions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'How does photosynthesis convert light energy into chemical energy?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Factual Descriptions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What distinguishes a legal precedent from a statute in your jurisdiction?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Factual Descriptions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'How does your device's backup system store and retrieve data?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Factual Descriptions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What features define a high-context culture compared with a low-context one?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Factual Descriptions",
+        "difficulty": "Hard"
+    },
+
+    # 3) Opinions – Simple Present (opinions/preferences)
+    {
+        "question": "Which form best fits this prompt's target use? 'What makes a presentation persuasive, in your experience?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Opinions",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Which is more important for career growth: specialization or versatility? Why?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Opinions",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Do deadlines improve creativity or stifle it? Explain your reasoning.'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Opinions",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What criteria do you use to judge whether news is reliable?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Opinions",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Which skill should schools prioritize more, and why: coding, media literacy, or financial literacy?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Opinions",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Is remote work better for most teams? Defend your stance with examples.'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Opinions",
+        "difficulty": "Medium"
+    },
+
+    # 4) Possessions – Simple Present
+    {
+        "question": "Which form best fits this prompt's target use? 'What tools or resources do you currently have that most improve your work?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Possessions",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Which possessions do you value for their utility rather than sentimental reasons?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Possessions",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What subscriptions do you maintain, and which give the best value?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Possessions",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Which books do you own that you often recommend to others, and why?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Possessions",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What equipment do you have that you underuse, and what would help you use it more?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Possessions",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What apps belong on your \"must-install\" list for a new device?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Possessions",
+        "difficulty": "Easy"
+    },
+
+    # 5) Ability Descriptions – Modals (can/can't; be able to)
+    {
+        "question": "Which form best fits this prompt's target use? 'What tasks can you complete under pressure that you struggle with in calm settings?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Ability",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Which complex topics can you explain clearly to a beginner?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Ability",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'In which situations can you multitask effectively, and when can't you?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Ability",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What creative skills can you bring to a team that others might overlook?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Ability",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What constraints limit what you can accomplish in a typical day?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Ability",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'How quickly can you learn a new tool, and what accelerates that process?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Ability",
+        "difficulty": "Medium"
+    },
+
+    # 6) Current Status of Happenings – Present Continuous
+    {
+        "question": "Which form best fits this prompt's target use? 'What projects are you currently working on, and what's progressing well right now?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "B",
+        "category": "Tense Practice - Current Status",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Which habits are you trying to build at the moment, and how are you tracking them?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "B",
+        "category": "Tense Practice - Current Status",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What challenges are you facing this week that you didn't anticipate?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "B",
+        "category": "Tense Practice - Current Status",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'How is your team handling feedback from the latest review cycle?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "B",
+        "category": "Tense Practice - Current Status",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'What trends are you noticing in your industry this quarter?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "B",
+        "category": "Tense Practice - Current Status",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Which tasks are you postponing today, and why?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "B",
+        "category": "Tense Practice - Current Status",
+        "difficulty": "Medium"
+    },
+
+    # 7) Commands – Imperatives
+    {
+        "question": "Which form best fits this prompt's target use? 'Outline the steps for completing the task, then execute the first two steps.'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "D",
+        "category": "Tense Practice - Commands",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Describe your goal in one sentence. Now prioritize three actions—do them in order.'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "D",
+        "category": "Tense Practice - Commands",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Identify your biggest bottleneck. Remove one obstacle within the next hour.'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "D",
+        "category": "Tense Practice - Commands",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Summarize the meeting in three bullet points. Share the key decision first.'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "D",
+        "category": "Tense Practice - Commands",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Write a concise email request (under 100 words). Send it before noon.'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "D",
+        "category": "Tense Practice - Commands",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Set a 25-minute timer. Focus on one task. Don't switch contexts.'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "D",
+        "category": "Tense Practice - Commands",
+        "difficulty": "Medium"
+    },
+
+    # 8) Comments – Present Simple/Continuous (primary focus: statements of feedback/observation)
+    {
+        "question": "Which form best fits this prompt's target use? 'Your introduction is clear, but the main claim needs evidence—what source can you add?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Comments",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'The design looks consistent; however, the call-to-action isn't prominent. How can you highlight it?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Comments",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'I'm noticing repeated terms—where can you replace them with precise alternatives?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "B",
+        "category": "Tense Practice - Comments",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'The pace is improving, but the transitions still feel abrupt. Where can you add signposting?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "B",
+        "category": "Tense Practice - Comments",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'This solution is elegant; still, how does it handle edge cases?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Comments",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Your examples are relatable; can you include one counterexample for balance?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "A",
+        "category": "Tense Practice - Comments",
+        "difficulty": "Hard"
+    },
+
+    # 9) Suggestions – Modals (should/could/might/may)
+    {
+        "question": "Which form best fits this prompt's target use? 'You could break the project into milestones—what would the first milestone include?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Suggestions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'You might test the idea with a small pilot. What metrics would validate it?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Suggestions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'It may help to define \"done\" for each task. What's your definition for this one?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Suggestions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'You should consider a simpler baseline model first—what baseline makes sense here?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Suggestions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'Could you draft two versions and A/B test them? What's your success criterion?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Suggestions",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which form best fits this prompt's target use? 'If time is limited, which part should you cut without hurting quality?'",
+        "options": [
+            "A) Simple Present (habit/fact/opinion/possession)",
+            "B) Present Continuous (current/ongoing)",
+            "C) Modals (ability/suggestion)",
+            "D) Imperative (command)"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Suggestions",
+        "difficulty": "Hard"
+    },
+
+    # 10) Mixed-Tense Challenge – Mixed/Contrast
+    {
+        "question": "Which option best describes the target use? 'What do you usually do to prepare for presentations, and what are you working on improving right now?'",
+        "options": [
+            "A) Simple Present",
+            "B) Present Continuous",
+            "C) Mixed/Contrast (Simple Present + Present Continuous)",
+            "D) Imperative"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Mixed",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which option best describes the target use? 'What resources do you have that can help, and what skills are you currently developing to use them better?'",
+        "options": [
+            "A) Simple Present",
+            "B) Present Continuous",
+            "C) Mixed/Contrast (Simple Present + Present Continuous)",
+            "D) Imperative"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Mixed",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which option best describes the target use? 'What do you believe makes a team effective, and how are you testing that belief this month?'",
+        "options": [
+            "A) Simple Present",
+            "B) Present Continuous",
+            "C) Mixed/Contrast (Simple Present + Present Continuous)",
+            "D) Imperative"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Mixed",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which option best describes the target use? 'What can you already do well, and what will you be able to do after completing your next course?'",
+        "options": [
+            "A) Simple Present",
+            "B) Present Continuous",
+            "C) Mixed/Contrast (Present Ability + Future Ability)",
+            "D) Imperative"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Mixed",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which option best describes the target use? 'What steps does your review process follow, and which step are you currently revising?'",
+        "options": [
+            "A) Simple Present",
+            "B) Present Continuous",
+            "C) Mixed/Contrast (Simple Present + Present Continuous)",
+            "D) Imperative"
+        ],
+        "answer": "C",
+        "category": "Tense Practice - Mixed",
+        "difficulty": "Hard"
+    }
+]) 
+
+# Auto-add explanations for all Tense Practice items (generic but accurate)
+for _q in questions:
+    if _q.get('category', '').startswith('Tense Practice -') and 'explanations' not in _q:
+        _opts = _q.get('options', [])
+        _is_mixed = any('Mixed/Contrast' in o for o in _opts)
+        if _is_mixed:
+            _q['explanations'] = {
+                'A': "Simple Present describes habits or timeless facts; alone it doesn't cover the ongoing/temporary part in the prompt.",
+                'B': "Present Continuous describes current/ongoing actions; alone it doesn't capture the habitual/regular part in the prompt.",
+                'C': "Correct. The prompt contrasts a habitual part with a current/ongoing part, so a mixed use is expected.",
+                'D': "Imperatives are commands/instructions; the prompt asks for description/evaluation, not commands."
+            }
+        else:
+            _q['explanations'] = {
+                'A': "Simple Present: use for habits/routines, general truths, opinions, and possession; matches prompts about 'usually', 'generally', definitions, or stable states.",
+                'B': "Present Continuous: use for actions happening now, temporary states, or current trends; signaled by 'currently', 'right now', 'this week/quarter'.",
+                'C': "Modals: use can/could/should/might/may to express ability, possibility, advice, or suggestions; fits prompts asking what you can do or giving guidance.",
+                'D': "Imperative: base verb used for commands or instructions; fits prompts that tell you to act (e.g., 'Describe...', 'Outline...', 'Set...')."
+            }
+
 class EnglishQuiz:
     def __init__(self):
         self.questions = questions
