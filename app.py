@@ -206,41 +206,44 @@ def show_quiz_setup():
     # Get username
     username = st.text_input("Enter your name (optional):", placeholder="Your name here...")
     
+    # Build topic list from questions
+    topic_set = sorted({q.get('category', 'General') for q in questions})
+    topic_options = ["All Topics"] + topic_set
+    
     col1, col2 = st.columns(2)
     
     with col1:
         st.subheader("📝 Quiz Options")
-        quiz_mode = st.selectbox(
-            "Select Quiz Mode:",
-            ["Full Quiz (All Questions)", "Shuffled Quiz", "Easy Questions", "Medium Questions", "Hard Questions"]
-        )
+        selected_topic = st.selectbox("Select Topic:", topic_options, index=0)
+        shuffle_questions = st.checkbox("🔀 Shuffle questions", value=False)
     
     with col2:
         st.subheader("ℹ️ About the Quiz")
         st.info("""
-        **Topics Covered:**
-        - Nouns and Verbs
-        - Adjectives (Identification, Application, Degree)
-        - Articles (A, An, The)
-        - Prepositions
-        - Question Words
-        - Contractions and Interjections
-        - Tenses
-        - Possession
+        Choose a topic to focus your practice (e.g., Nouns, Adjectives, Tenses). 
+        You can also select "All Topics" to include everything and optionally shuffle.
+        
+        **Examples of Topics:**
+        - Nouns and Main Verbs; Number and Collection; Countable/Uncountable Nouns
+        - Verb Forms and Helping Verbs; Possessive Nouns and Apostrophes
+        - Pronouns and Possessive Pronouns; Adjectives; Articles; Prepositions; Question Words
+        - Contractions and Interjections; Tenses; Possession
+        - Tense Practice (Usual Activities, Factual Descriptions, Opinions, etc.)
         """)
     
     if st.button("🚀 Start Quiz", type="primary", use_container_width=True):
-        # Prepare questions based on mode
-        quiz_questions = questions.copy()
+        # Prepare questions based on topic and shuffle preference
+        if selected_topic == "All Topics":
+            quiz_questions = questions.copy()
+        else:
+            quiz_questions = [q for q in questions if q.get('category', 'General') == selected_topic]
         
-        if quiz_mode == "Shuffled Quiz":
+        if not quiz_questions:
+            st.warning("No questions found for the selected topic.")
+            return
+        
+        if shuffle_questions:
             random.shuffle(quiz_questions)
-        elif quiz_mode == "Easy Questions":
-            quiz_questions = [q for q in quiz_questions if q.get('difficulty', 'Medium') == 'Easy']
-        elif quiz_mode == "Medium Questions":
-            quiz_questions = [q for q in quiz_questions if q.get('difficulty', 'Medium') == 'Medium']
-        elif quiz_mode == "Hard Questions":
-            quiz_questions = [q for q in quiz_questions if q.get('difficulty', 'Medium') == 'Hard']
         
         # Initialize quiz state
         st.session_state['quiz_started'] = True
@@ -250,8 +253,8 @@ def show_quiz_setup():
         st.session_state['user_answers'] = []
         st.session_state['quiz_finished'] = False
         st.session_state['username'] = username if username else "Anonymous"
-        st.session_state['quiz_mode'] = quiz_mode
-        st.session_state['difficulty'] = quiz_mode
+        st.session_state['quiz_mode'] = f"Topic: {selected_topic}"
+        st.session_state['difficulty'] = selected_topic
         st.rerun()
 
 def show_question():

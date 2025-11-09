@@ -2643,6 +2643,59 @@ class EnglishQuiz:
         print(f"\n📊 Total Questions Available: {total}")
         input("\nPress Enter to return to menu...")
 
+    def run_topic_quiz(self):
+        """Run a quiz filtered by topic (question category)."""
+        # Collect unique categories from the question bank
+        categories = sorted({q.get('category', 'General') for q in self.questions})
+        if not categories:
+            print("\n❗ No categories found.")
+            input("Press Enter to return to menu...")
+            return
+        
+        # Show selection menu
+        self.clear_screen()
+        self.display_header()
+        print("Select a topic (category):")
+        print("0. All Topics")
+        for idx, cat in enumerate(categories, start=1):
+            print(f"{idx}. {cat}")
+        
+        sel = input("\nEnter your choice (0-{}): ".format(len(categories))).strip()
+        if not sel.isdigit():
+            print("\n❌ Invalid input. Returning to menu.")
+            input("Press Enter...")
+            return
+        sel_i = int(sel)
+        if sel_i < 0 or sel_i > len(categories):
+            print("\n❌ Choice out of range. Returning to menu.")
+            input("Press Enter...")
+            return
+        
+        chosen = "All Topics" if sel_i == 0 else categories[sel_i - 1]
+        
+        # Filter questions
+        if chosen == "All Topics":
+            selected = self.questions.copy()
+        else:
+            selected = [q for q in self.questions if q.get('category', 'General') == chosen]
+        
+        if not selected:
+            print(f"\n❗ No questions found for topic: {chosen}")
+            input("Press Enter to return to menu...")
+            return
+        
+        # Shuffle option
+        shuf = input("\nShuffle questions? (y/N): ").strip().lower()
+        do_shuffle = shuf.startswith('y')
+        
+        # Temporarily swap question set, run quiz, then restore
+        original = self.questions
+        try:
+            self.questions = selected
+            self.run_quiz(shuffle=do_shuffle, difficulty='ALL')
+        finally:
+            self.questions = original
+
 def main():
     """Main function with menu options"""
     quiz = EnglishQuiz()
@@ -2654,32 +2707,26 @@ def main():
         print("=" * 60)
         print("\nChoose your quiz options:")
         print("1. 🎯 Take Full Quiz (All Questions)")
-        print("2. 🔀 Take Shuffled Quiz")
-        print("3. 🟢 Easy Questions Only")
-        print("4. 🟡 Medium Questions Only") 
-        print("5. 🔴 Hard Questions Only")
-        print("6. 📊 View Question Categories")
-        print("7. 🚪 Exit")
+        print("2. 🔀 Take Shuffled Quiz (All Questions)")
+        print("3. 🧭 Topic-wise Quiz (choose Nouns, Tenses, etc.)")
+        print("4. 📊 View Question Categories")
+        print("5. 🚪 Exit")
         
-        choice = input("\nEnter your choice (1-7): ").strip()
+        choice = input("\nEnter your choice (1-5): ").strip()
         
         if choice == '1':
             quiz.run_quiz()
         elif choice == '2':
             quiz.run_quiz(shuffle=True)
         elif choice == '3':
-            quiz.run_quiz(difficulty='Easy')
+            quiz.run_topic_quiz()
         elif choice == '4':
-            quiz.run_quiz(difficulty='Medium')
-        elif choice == '5':
-            quiz.run_quiz(difficulty='Hard')
-        elif choice == '6':
             quiz.show_question_categories()
-        elif choice == '7':
+        elif choice == '5':
             print("\n👋 Thank you for using the English Grammar Quiz!")
             break
         else:
-            print("\n❌ Invalid choice! Please enter 1-7.")
+            print("\n❌ Invalid choice! Please enter 1-5.")
             input("Press Enter to continue...")
     
     input("\nPress Enter to exit...")
